@@ -1,0 +1,25 @@
+# Raw EU-SILC microdata (never commit — restricted-access data)
+*.csv
+*.csv.gz
+*.CSV
+*.CSV.gz
+
+# Pipeline outputs (regenerate locally instead of committing)
+*.rds
+*.parquet
+/output/
+/outputs/
+
+# Keep tracked example/template files even though *.csv is ignored above
+!inflationratesEU_template.csv
+
+# R session / build artifacts
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
